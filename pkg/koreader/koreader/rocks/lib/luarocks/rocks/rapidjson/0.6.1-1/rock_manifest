@@ -1,0 +1,11 @@
+rock_manifest = {
+   doc = {
+      ["API.md"] = "2a613d5d122d3d87e4593f34513c23d1",
+      LICENSE = "1e2043b9a24e8a3ca1a9b0b7176ddce6",
+      ["README.md"] = "44931c1d4aa98467fc04a739caf37821"
+   },
+   lib = {
+      ["rapidjson.so"] = "8366f7c1e4b1b215a82987bd4ecee40c"
+   },
+   ["rapidjson-0.6.1-1.rockspec"] = "51d2c31c4efc02ee952fec77a27f92fb"
+}
