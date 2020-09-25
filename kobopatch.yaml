@@ -1,87 +1,97 @@
 version: 4.24.15676
-in: src/kobo-update-4.24.15676.zip
-out: out/KoboRoot.tgz
-log: out/log.txt
+in:      src/kobo-update-4.24.15676.zip
+out:     out/KoboRoot.tgz
+log:     out/log.txt
 
 patchFormat: kobopatch
 
 patches:
-  src/nickel.yaml: usr/local/Kobo/nickel
-  src/libadobe.so.yaml: usr/local/Kobo/libadobe.so
+  src/nickel.yaml:             usr/local/Kobo/nickel
+  src/libadobe.so.yaml:        usr/local/Kobo/libadobe.so
   src/libnickel.so.1.0.0.yaml: usr/local/Kobo/libnickel.so.1.0.0
-  src/dict-patch.yaml: usr/local/Kobo/libnickel.so.1.0.0
-  src/librmsdk.so.1.0.0.yaml: usr/local/Kobo/librmsdk.so.1.0.0
+  src/librmsdk.so.1.0.0.yaml:  usr/local/Kobo/librmsdk.so.1.0.0
 
 overrides:
   src/nickel.yaml:
-    Custom collection/author header title font: yes
-    Custom new header/footer font: yes
-    Custom page navigation scrubber: yes
-    Custom synopsis details line spacing: yes
-    Dictionary pop-up - increase available text area: yes
-    Increase Book Details synopsis area: yes
-    Increase library cover size: yes
-    Increase size of kepub chapter progress chart: yes
-    New home screen subtitle custom font: yes
-    Reduce new header/footer height: yes
+    Custom collection/author header title font:                      yes
+    Custom new header/footer font:                                   yes
+    Custom page navigation scrubber:                                 yes
+    Custom synopsis details line spacing:                            yes
+    Dictionary pop-up - increase available text area:                yes
+    Increase Book Details synopsis area:                             yes
+    Increase library cover size:                                     yes
+    Increase size of kepub chapter progress chart:                   yes
+    New home screen subtitle custom font:                            yes
+    Reduce new header/footer height:                                 yes
     Remove footer (row3) and increase cover size on new home screen: yes
-    Series list increase cover thumbnails: yes
-  src/dict-patch.yaml:
-    Never sync dictionaries: yes
+    Series list increase cover thumbnails:                           yes
   src/libadobe.so.yaml:
   src/libnickel.so.1.0.0.yaml:
-    Always show confirmation dialog before upgrading: yes
-    Custom kepub default margins: yes
-    Customize ComfortLight settings: yes
-    Dictionary text font-family/font-size/line-height: yes
-    Disable all tutorial dialogs: yes
-    Enable advanced settings for all fonts: yes
-    FeatureSettings - BookSpecificStats: yes
-    FeatureSettings - ExportHighlights: yes
-    FeatureSettings - MyWords: yes
-    FeatureSettings - ShowFacebookShare: no
-    Hide browser from beta features: no
-    Ignore .otf fonts: yes
-    Increase TOC level indentation and fix extra indentation bug: yes
-    Increase page navigation history: yes
-    KePub constant font sharpness: yes
-    KePub stylesheet additions: yes
-    My 24 line spacing values: yes
-    Only show stats SmartLink: yes
-    Remove beta features not supported text: yes
-    Remove line from bottom tab bar: yes
-    Remove recommendations (row1col2) from home screen: yes
-    Set font scale factor: yes
-    Shorten dictionary entry not found message: yes
-    ePub constant font sharpness: yes
-    ePub uniform font scale: yes
+    Always show confirmation dialog before upgrading:                yes
+    Custom kepub default margins:                                    yes
+    Customize ComfortLight settings:                                 yes
+    Dictionary text font-family/font-size/line-height:               yes
+    Disable all tutorial dialogs:                                    yes
+    Enable advanced settings for all fonts:                          yes
+    FeatureSettings - BookSpecificStats:                             yes
+    FeatureSettings - ExportHighlights:                              yes
+    FeatureSettings - MyWords:                                       yes
+    FeatureSettings - ShowFacebookShare:                             no
+    Hide browser from beta features:                                 no
+    Ignore .otf fonts:                                               yes
+    KePub constant font sharpness:                                   yes
+    KePub stylesheet additions:                                      yes
+    My 24 line spacing values:                                       yes
+    Only show stats SmartLink:                                       yes
+    Remove beta features not supported text:                         yes
+    Remove line from bottom tab bar:                                 yes
+    Remove recommendations (row1col2) from home screen:              yes
+    Set font scale factor:                                           yes
+    Shorten dictionary entry not found message:                      yes
+    ePub constant font sharpness:                                    yes
+    ePub uniform font scale:                                         yes
 
   src/librmsdk.so.1.0.0.yaml:
 
 files:
   # Fonts
-  fonts/Avenir-Bold.ttf: mnt/onboard/fonts/Avenir-Bold.ttf
-  fonts/Avenir-BoldItalic.ttf: mnt/onboard/fonts/Avenir-BoldItalic.ttf
-  fonts/Avenir-Italic.ttf: mnt/onboard/fonts/Avenir-Italic.ttf
-  fonts/Avenir-Regular.ttf: mnt/onboard/fonts/Avenir-Regular.ttf
-  fonts/AvenirNext-Bold.ttf: mnt/onboard/fonts/AvenirNext-Bold.ttf
-  fonts/AvenirNext-BoldItalic.ttf: mnt/onboard/fonts/AvenirNext-BoldItalic.ttf
-  fonts/AvenirNext-Italic.ttf: mnt/onboard/fonts/AvenirNext-Italic.ttf
-  fonts/AvenirNext-Regular.ttf: mnt/onboard/fonts/AvenirNext-Regular.ttf
-  fonts/Georgia-Bold.ttf: mnt/onboard/fonts/Georgia-Bold.ttf
-  fonts/Georgia-BoldItalic.ttf: mnt/onboard/fonts/Georgia-BoldItalic.ttf
-  fonts/Georgia-Italic.ttf: mnt/onboard/fonts/Georgia-Italic.ttf
-  fonts/Georgia-Regular.ttf: mnt/onboard/fonts/Georgia-Regular.ttf
-  fonts/OperatorSSm-Bold.ttf: mnt/onboard/fonts/OperatorSSm-Bold.ttf
+  fonts/AvenirNext-Bold.ttf:        mnt/onboard/fonts/AvenirNext-Bold.ttf
+  fonts/AvenirNext-BoldItalic.ttf:  mnt/onboard/fonts/AvenirNext-BoldItalic.ttf
+  fonts/AvenirNext-Italic.ttf:      mnt/onboard/fonts/AvenirNext-Italic.ttf
+  fonts/AvenirNext-Regular.ttf:     mnt/onboard/fonts/AvenirNext-Regular.ttf
+  fonts/OperatorSSm-Bold.ttf:       mnt/onboard/fonts/OperatorSSm-Bold.ttf
   fonts/OperatorSSm-BoldItalic.ttf: mnt/onboard/fonts/OperatorSSm-BoldItalic.ttf
-  fonts/OperatorSSm-Italic.ttf: mnt/onboard/fonts/OperatorSSm-Italic.ttf
-  fonts/OperatorSSm-Regular.ttf: mnt/onboard/fonts/OperatorSSm-Regular.ttf
+  fonts/OperatorSSm-Italic.ttf:     mnt/onboard/fonts/OperatorSSm-Italic.ttf
+  fonts/OperatorSSm-Regular.ttf:    mnt/onboard/fonts/OperatorSSm-Regular.ttf
+
+    # Reserved for future QT version
+    # fonts/Avenir-Bold.ttf:            usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/Avenir-Bold.ttf
+    # fonts/Avenir-BoldItalic.ttf:      usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/Avenir-BoldItalic.ttf
+    # fonts/Avenir-Italic.ttf:          usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/Avenir-Italic.ttf
+    # fonts/Avenir-Regular.ttf:         usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/Avenir-Regular.ttf
+    # fonts/Georgia-Bold.ttf:           usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/georgiab.ttf
+    # fonts/Georgia-BoldItalic.ttf:     usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/georgiaz.ttf
+    # fonts/Georgia-Italic.ttf:         usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/georgiai.ttf
+    # fonts/Georgia-Regular.ttf:        usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib/fonts/georgiar.ttf
+
+  fonts/Avenir-Bold.ttf:            usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-Bold.ttf
+  fonts/Avenir-BoldItalic.ttf:      usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-BoldItalic.ttf
+  fonts/Avenir-Italic.ttf:          usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-Italic.ttf
+  fonts/Avenir-Regular.ttf:         usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-Regular.ttf
+  fonts/Georgia-Bold.ttf:           usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiab.ttf
+  fonts/Georgia-BoldItalic.ttf:     usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiaz.ttf
+  fonts/Georgia-Italic.ttf:         usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiai.ttf
+  fonts/Georgia-Regular.ttf:        usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiar.ttf
+
+  # Dictionaries
+  dict/dicthtml.zip:       mnt/onboard/.kobo/custom-dict/dicthtml.zip
+  dict/dicthtml-en-ja.zip: mnt/onboard/.kobo/custom-dict/dicthtml-vi.zip
 
   # busybox
   pkg/busybox-v1.31.0/busybox-armv7l: usr/local/babygau/busybox
 
   # Nickelmenu
-  src/nm: mnt/onboard/.adds/nm/config
+  src/nm:                         mnt/onboard/.adds/nm/config
   pkg/nickelmenu-v3.1.2/libnm.so: usr/local/Kobo/imageformats/libnm.so
 
   # Nickelseries

@@ -1,6 +1,7 @@
+# Outdated in favoured of custom dictionary
 Never sync dictionaries:
-  - Enabled: no
-  - BaseAddress: { Sym: 'SyncDictionariesCommand::prepareDownloadList()' }
-  - ReplaceBytes: { Offset: 922, FindH: 0CD5, ReplaceH: 0CE0 } #permissions
-  - ReplaceBytes: { Offset: 900, FindH: FFF6CAAE, ReplaceInstNOP: true } #size
-  - ReplaceBytes: { Offset: 866, FindH: 3FF4DBAE, ReplaceInstNOP: true } #isSynced
+- Enabled: no
+- BaseAddress:  {Sym: "SyncDictionariesCommand::prepareDownloadList()"}
+- ReplaceBytes: {Offset: 922, FindH: 0CD5,     ReplaceH:       0CE0}   #permissions
+- ReplaceBytes: {Offset: 900, FindH: FFF6CAAE, ReplaceInstNOP: true}   #size
+- ReplaceBytes: {Offset: 866, FindH: 3FF4DBAE, ReplaceInstNOP: true}   #isSynced
