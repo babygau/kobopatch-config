@@ -84,7 +84,6 @@ files:
   fonts/Georgia-Regular.ttf:        usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiar.ttf
 
   # Dictionaries
-  dict/dicthtml.zip:       mnt/onboard/.kobo/custom-dict/dicthtml.zip
   dict/dicthtml-en-ja.zip: mnt/onboard/.kobo/custom-dict/dicthtml-vi.zip
 
   # busybox
