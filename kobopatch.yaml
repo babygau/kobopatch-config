@@ -1,5 +1,5 @@
 version: 4.24.15676
-in:      src/kobo-update-4.24.15676.zip
+in:      src/kobo-update-4.26.16704.zip
 out:     out/KoboRoot.tgz
 log:     out/log.txt
 
@@ -91,7 +91,7 @@ files:
 
   # Nickelmenu
   src/nm:                         mnt/onboard/.adds/nm/config
-  pkg/nickelmenu-v3.1.2/libnm.so: usr/local/Kobo/imageformats/libnm.so
+  pkg/nickelmenu-v0.5.1/libnm.so: usr/local/Kobo/imageformats/libnm.so
 
   # Nickelseries
   pkg/nickelseries-8c5d318/libns.so: usr/local/Kobo/imageformats/libns.so
